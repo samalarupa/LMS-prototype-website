@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="project.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="logo.png"
+              class="lms-logo"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" id="navItem1" href="#wcuSection">
+                Why Choose Us?
+                <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-link" href="#coursesSection" id="navItem2">Courses</a>
+              <a class="nav-link" href="#AttendanceSection" id="navItem3">Attendence</a>
+              <a class="nav-link" href="#QuizSection" id="navItem4">Quiz</a>
+              <a class="nav-link" href="#" id="Profile-link" style="color: #323f4b; font-family: Roboto; font-size: 20px;">Profile <img src="https://i.pinimg.com/474x/3d/91/09/3d910919cf4d41c1114457504dc29201.jpg" alt="" class = "profile-logo"></a>
+              <div class="profile-dropdown" style="display: none;">
+                <p id="username-display"></p>
+                <p id="email-display"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- <marquee>Breaking news        Upcomming events       anouncements        to-do list      remainders</marquee> -->
+      <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>Breaking news</p>
+          </div>
+          <div class="carousel-item">
+            <p>Upcomming events</p>
+          </div>
+          <div class="carousel-item">
+            <p>anouncements</p>
+          </div>
+        </div>
+      </div> -->
+      <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+          <h1 class="banner-heading mb-3">LMS PORTAL</h1>
+          <p class="banner-caption mb-4">where learning meets technology</p>
+          <!-- <button class="custom-button">View Menu</button>
+          <button class="custom-outline-button">Order Now</button> -->
+        </div>
+      </div>
+      <div class="wcu-section pt-5 pb-5" id="wcuSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="wcu-section-heading">Why Choose Us?</h1>
+              <p class="wcu-section-description">
+                This lms portal helps us to explore more advanced version of online learning.
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="wcu-card p-3 mb-3">
+                <img
+                  src="face_recog.png"
+                  class="wcu-card-image"
+                />
+                <h1 class="wcu-card-title mt-3">Face Recognition Attendence</h1>
+                <p class="wcu-card-description">
+                  Facial recognition attendance eliminates proxy punching, a problem with traditional methods. It verifies users in real-time using facial features, ensuring accurate attendance.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="wcu-card p-3 mb-3">
+                <img
+                  src="quiz.png"
+                  class="wcu-card-image"
+                />
+                <h1 class="wcu-card-title mt-3">Quiz</h1>
+                <p class="wcu-card-description">
+                  Learning websites pack a double punch with quizzes: assess understanding and solidify learning. Quizzes test knowledge, then retrieval practice during quizzes strengthens memory.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="wcu-card p-3 mb-3">
+                <img
+                  src="notes.png"
+                  class="wcu-card-image"
+                />
+                <h1 class="wcu-card-title mt-3">Notes</h1>
+                <p class="wcu-card-description">
+                  Taking notes engages your brain, filtering information and boosting memory. They improve focus and solidify learning for later recall, acting as a bridge between passive learning and active understanding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="course-section pt-5 pb-5" id="coursesSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="menu-section-heading">Courses</h1>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="https://beingpro33.com/img/c.png"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">C</h1>
+                <a href="course.html" class="menu-item-link">
+                  View course
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="https://i.pinimg.com/474x/05/97/4a/05974a4d1da1deac6470d2e87aa8c101.jpg"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">C++</h1>
+                <a href="" class="menu-item-link">
+                  View course
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://th.bing.com/th/id/OIP.8mB0JRId2fMaxxmyMOZecAHaIO?w=176&h=194&c=7&r=0&o=5&dpr=1.6&pid=1.7"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Python</h1>
+                <a href="" class="menu-item-link">
+                  View course
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://th.bing.com/th?id=OIP.7khrXvKlEjzsh2VKsc_cAAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Java</h1>
+                <a href="" class="menu-item-link">
+                  View course
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://www.onlinecasinos.org.uk/images/CASINO/Articles/html5-logo.png"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">HTML</h1>
+                <a href="" class="menu-item-link">
+                  View course
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://bs-uploads.toptal.io/blackfish-uploads/skill_page/content/logo_file/logo/5708/CSS-7180db2b35a5dc8e8e9e60729b54de02.png"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">CSS</h1>
+                <a href="" class="menu-item-link">
+                  View course
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://th.bing.com/th/id/OIP.7LuRwP6_gv79xbTQZeiQ-QHaEo?w=303&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">JS</h1>
+                <a href="" class="menu-item-link">
+                  View course
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://clipground.com/images/bootstrap-icon-png-5.png"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">bootstrap</h1>
+                <a href="" class="menu-item-link">
+                  View course
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="Attendence-section pt-5 pb-5" id="AttendenceSection">
+        <div class = "container">
+          <div class = "row">
+            <div class = "col-6">
+              <h1 class="menu-section-heading">Attendence</h1>
+              <a href="#" class="menu-item-link">
+                <button class = "btn btn-success">Enter your attendance</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="Attendance-section pt-5 pb-5" id="AttendanceSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="menu-section-heading">Attendance</h1>
+                    <button id="captureAttendanceButton">Capture Attendance</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+      <div class = "Quiz-section pt-5 pb-5" id="QuizSection">
+        <div class = "container">
+          <div class = "row">
+            <div class = "col-12">
+              <h1 class="menu-section-heading">Quizzes</h1>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <h1 class="menu-card-title">C</h1>
+                <a href="quiz.html" display="_blank" class="menu-item-link">
+                  View Quizzes
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <h1 class="menu-card-title">C++</h1>
+                <a href="" class="menu-item-link">
+                  View Quizzes
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <h1 class="menu-card-title">Python</h1>
+                <a href="" class="menu-item-link">
+                  View Quizzes
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <h1 class="menu-card-title">Java</h1>
+                <a href="" class="menu-item-link">
+                  View Quizzes
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <h1 class="menu-card-title">Html</h1>
+                <a href="" class="menu-item-link">
+                  View Quizzes
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <h1 class="menu-card-title">Css</h1>
+                <a href="" class="menu-item-link">
+                  View Quizzes
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <h1 class="menu-card-title">JavaScript</h1>
+                <a href="" class="menu-item-link">
+                  View Quizzes
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <h1 class="menu-card-title">Bootstrap</h1>
+                <a href="" class="menu-item-link">
+                  View Quizzes
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <script src="project.js"></script>
+      <script src="script-login.js"></script> -->
+      <script>
+        document.getElementById('captureAttendanceButton').addEventListener('click', function() {
+            fetch('/capture-attendance', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert('Error: ' + data.error);
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Attendance capture failed.');
+            });
+        });
+    </script>
+</body>
+</html>
